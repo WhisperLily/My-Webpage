@@ -1,0 +1,30 @@
+* {
+    color:palevioletred;
+    padding:0;
+    margin:0;
+}
+
+ul {
+    display:flex;
+    justify-content:flex-end;
+    background-color:gainsboro;
+    padding:10px;
+}
+
+li {
+    list-style-type:none;
+    padding:10px;
+    background-color:gainsboro;
+}
+
+li a{
+    text-decoration:none;
+    color:palevioletred;
+    background-color:gainsboro;
+}
+
+.full-height {
+    height:100vh;
+    
+}
+
