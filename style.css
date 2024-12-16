@@ -1,30 +1,114 @@
 * {
-    color:palevioletred;
+    background-color:#e2d4c1; 
     padding:0;
     margin:0;
+    color:palevioletred;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* separate section to cover screen viewport */
+.full-height { 
+    height:100vh;
+    margin-left:70px;
+    scroll-margin-top:120px;
+}
+
+/* style navigation bar */
+.pgOptn {
+    position:fixed;
+    top:0;
+    right:0;
+    width:700px;
+    margin-right:10px;
+}
 ul {
     display:flex;
-    justify-content:flex-end;
-    background-color:gainsboro;
-    padding:10px;
+    justify-content:space-between;
+    margin:0;
+    border-bottom:solid 5px #d0ac7d;
 }
-
 li {
     list-style-type:none;
     padding:10px;
-    background-color:gainsboro;
 }
-
 li a{
     text-decoration:none;
     color:palevioletred;
-    background-color:gainsboro;
+}
+.verse {
+    margin-left:20px;
+    padding:10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    position:fixed;
+    text-shadow:0 0 15px #ff5975;
 }
 
-.full-height {
-    height:100vh;
-    
+
+#home{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:100px;
+    font-weight:600;
+}
+.home {
+    margin-right:150px;
+}
+.welcome{
+    font-size:20px;
+}
+.name {
+    font-size:70px;
+    padding-bottom:45px;
+}
+.memoji img{
+    margin-top:-140px;
+    width:420px;
+    height:auto;
+}
+.hometext  {
+    color:black;
+    font-weight:500;
+}
+.career em {
+    color:black;
+    text-transform:uppercase;
 }
 
+
+#about {
+    width:80%;
+}
+.abt {
+    text-align:center;
+    margin-bottom:70px;
+    font-size:50px;
+    font-weight:500;  
+}
+img {
+    float:left;
+    width:290px;
+    object-fit:fill;
+    margin-right:20px;
+    padding-left:20px;
+    aspect-ratio: 2 / 2;
+    border-radius:50%;
+}
+#about p{
+    text-align:center;
+}
+
+
+.skls {
+    text-align:center;
+    margin-bottom:70px;
+    font-size:50px;
+    font-weight:500; 
+}
+.clusters img{
+    width:100px;
+    height:auto;
+}

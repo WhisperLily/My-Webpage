@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <div class="pgOptn">
+<!-- Navigation bar -->
+    <div class="pgOptn"> 
         <ul>
             <li><a href="#home"> HOME </a></li>
             <li><a href="#about"> ABOUT ME </a></li>
@@ -16,37 +17,65 @@
             <li><a href="#projects"> PROJECTS </a></li>
             <li><a href="#certificates"> CREDENTIALS </a></li> 
             <li><a href="#contact"> CONTACT </a></li>
-        </ul>
-    </div> 
+        </ul> 
+    </div>
+<!-- Bible verse separated into a div to meet design expectation. 
+ Will like to add a feature were verse changes to any of my favorite verses evrytime webpage is reloaded -->
+    <div class="verse"><strong> HABAKKUK 3: 18-19 </strong></div> 
 
+
+    <!-- Landing page. span is used for inline feature, to allow the image sit inline with the text. -->
     <div id="home" class="full-height">
-        <h1> Hi, I am Scholastica Nwanze </h1>
-        <p>An Artificial Intelligence Engineer</p>
+        <span class="home">   
+            <p class="welcome"> WELCOME, MY NAME IS </p>
+            <p class="name">SCHOLASTICA <br> NWANZE </p>
+            <p class="career"> <em>Artificial Intelligence Engineer</em> <br>
+            <span class="hometext">I am an Artificial Intelligence graduate with a background in biomedical science.</span>
+            </p>
+        </span>
+        <span class="memoji">
+            <img src="./pics/Image.png">
+        </span>
     </div>
 
+
+   <!-- Page description of me.--> 
     <div id="about" class="full-height">
-        <h1> About Schola </h2>
+        <div class="abt"> <h1> My Profile </h1> </div>
         <p> 
+            <img src="./pics/me2.PNG"> 
             I am an open-minded and curious professional with a deep craving for knowledge, particularly in the ever-evolving world of technology.
-            My interest is in Artificial Intelligence stems from my passion for understanding and designing intelligent systems. 
+            My field of interest, Artificial Intelligence stems from my passion for understanding and designing intelligent systems. 
             I possess a relentless drive to learn, grow, and adapt in dynamic environments. 
             I believe in always putting people, safety, and integrity at the forefront of everything I do. <br>
             I am agile in my approach to both work and career development, thriving on challenges that push me to think creatively and solve complex problems. 
-            I embrace flexibility and I am excited about the opportunity to work across different teams and areas of Artificial Intelligence, building diverse experiences and a strong network. 
+            I embrace flexibility and I am excited about opportunities to work across different teams and areas of Artificial Intelligence, building diverse experiences and a strong network. 
             Every opportunity is a platform for me to contribute meaningfully, showcase my potential, and collaborate with forward-thinking professionals. <br>
             With my dedication and enthusiasm, I am confident in making a positive impact in the technology sector.
+            
         </p>
     </div>
     
     <div id="skills" class="full-height">
-        <h1> MY SKILLS </h1>
-        <p> 
-            <strong>Soft Skills:</strong> Adaptability, Agility, Analytical thinking, Creative Problem-solving, Excellent Communication, 
-            Team Collaboration, Time management, Technical documentation <br>
-            <strong> Programming Languages:</strong> Python, SQL, R, HTML, CSS, JavaScript <br>
-            <strong>Tools:</strong> Microsoft packages, Google suite <br>
-            <strong>Platforms:</strong>Jupyter Notebook, Visual Studio Code, GitHub
-        </p>
+        <div class="skls"> <h1> MY SKILLS </h1> </div>
+        <div class="clusters"> 
+            <img src="./pics/html.png" class="html">
+            <img src="./pics/css-3.png" class="css">
+            <img src="./pics/java-script.png" class="js">
+            <img src="./pics/python.png" class="py">
+            <img src="./pics/java.png" class="java">
+        </div>
+        <div class="sdesc">
+            <p>Soft Skills</p> 
+            <p>Adaptability, Agility, Analytical thinking, Creative Problem-solving, Excellent Communication, 
+            Team Collaboration, Time management, Technical documentation </p>
+            <p> Programming Languages</p> 
+            <p>Python, SQL, R, HTML, CSS, JavaScript </p>
+            <p>Tools</p> 
+            <p>Microsoft packages, Google suite </p>
+            <p>Platforms</p>
+            <p>Jupyter Notebook, Visual Studio Code, GitHub</p>
+        </div>
     </div>
 
     <div id="projects" class="full-height">
