@@ -1,22 +1,30 @@
-* {
-    background-color:#e2d4c1; 
+/* CSS FOR SEVERAL ELEMENTS */
+* { 
     padding:0;
     margin:0;
     color:palevioletred;
 }
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#e2d4c1;
+    /* #e2d4c1; */
 }
-
 /* separate section to cover screen viewport */
 .full-height { 
     height:100vh;
     margin-left:70px;
     scroll-margin-top:120px;
 }
+.abt, .skls, .work, .cert {
+    text-align:center;
+    margin-bottom:70px;
+    font-size:50px;
+    font-weight:500;  
+}
+
 
 /* style navigation bar */
-.pgOptn {
+.pgOptn { 
     position:fixed;
     top:0;
     right:0;
@@ -36,6 +44,7 @@ li {
 li a{
     text-decoration:none;
     color:palevioletred;
+    font-weight:700;
 }
 .verse {
     margin-left:20px;
@@ -47,6 +56,7 @@ li a{
 }
 
 
+/* CSS FOR THE HOME SECTION */
 #home{
     display:flex;
     align-items:center;
@@ -70,25 +80,20 @@ li a{
     height:auto;
 }
 .hometext  {
-    color:black;
+    color:#69462d;
     font-weight:500;
 }
 .career em {
-    color:black;
+    color:#69462d;
     text-transform:uppercase;
 }
 
 
+/* CSS FOR THE ABOUT ME SECTION */
 #about {
     width:80%;
-}
-.abt {
-    text-align:center;
-    margin-bottom:70px;
-    font-size:50px;
-    font-weight:500;  
-}
-img {
+} 
+.mypic {
     float:left;
     width:290px;
     object-fit:fill;
@@ -99,16 +104,76 @@ img {
 }
 #about p{
     text-align:center;
+    font-size:20px;
 }
 
 
-.skls {
-    text-align:center;
-    margin-bottom:70px;
-    font-size:50px;
-    font-weight:500; 
-}
+/* CSS FOR THE SKILLS SECTION */
 .clusters img{
     width:100px;
     height:auto;
+}
+
+
+/* CSS FOR THE PROJECT SECTION */
+.container {
+    background-color:white;
+    width:fit-content;
+    border-radius: 15px;
+}
+.proj1 {
+    height:260px;
+    width:auto;
+    border-radius:15px;
+}
+.title {
+    text-align:center;
+}
+
+
+/* CSS FOR THE CERTIFICATES SECTION */
+.contain {
+    display:flex;
+    align-items:center;
+}
+.herts, .ieuk, .au {
+    width:400px;
+    height:auto;
+    text-align:center;
+}
+.herts img, .ieuk img, .au img {
+    display:block;
+    margin:auto;
+    width:120px;
+    object-fit:fill;
+    border-radius:10%;
+}
+.herts p, .ieuk p, .au p {
+    padding-top:10px;
+    padding-bottom:5px;
+    margin-right:20px;
+    border-bottom:solid #69462d 3px;
+    font-size:17px;
+    font-weight:900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.award {
+    padding-top:20px;
+    font-weight:900;
+    color:#69462d;
+}
+
+
+/* CSS FOR THE CONTACTS SECTION */
+.yay {
+    width:fit-content;
+    height:auto;
+    border-bottom:solid 3px black;
+    margin-bottom:70px;
+    font-weight:600;
+} 
+.logo {
+   width:70px;
+   height:auto;
+   margin:30px;
 }
