@@ -215,6 +215,8 @@ li a{
     height:40px;
     transition: transform 0.3s ease;
 }
+.logo:hover {
+   transform: scale(1.6); /* Scales the element by 1.5 times */
 .ghl img, .ll img {
     background-color:#FFFFFF;
     border-radius:7px;
