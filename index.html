@@ -11,12 +11,12 @@
 <!-- NAVIGATION BAR -->
     <div class="pgOptn"> 
         <ul>
-            <li><a href="#home"> HOME </a></li>
-            <li><a href="#about"> ABOUT ME </a></li>
-            <li><a href="#skills"> MY SKILLS </a></li>
-            <li><a href="#projects"> PROJECTS </a></li>
-            <li><a href="#certificates"> CREDENTIALS </a></li> 
-            <li><a href="#contact"> CONTACT </a></li>
+            <li><a href="#home" class="texxt"> HOME </a></li>
+            <li><a href="#about" class="texxt"> ABOUT ME </a></li>
+            <li><a href="#skills" class="texxt"> MY SKILLS </a></li>
+            <li><a href="#projects" class="texxt"> PROJECTS </a></li>
+            <li><a href="#certificates" class="texxt"> CREDENTIALS </a></li> 
+            <li><a href="#contact" class="texxt"> CONTACT </a></li>
         </ul> 
     </div>
 <!-- Bible verse separated into a div to meet design expectation. 
@@ -42,7 +42,7 @@
 
    <!-- PAGE DESCRIPTION OF ME--> 
     <div id="about" class="full-height">
-        <div class="abt"> <h1> My Profile </h1> </div>
+        <div class="abt"> <h1><em> My Profile </em></h1> </div>
         <p> 
             <img src="./pics/me2.PNG" class="mypic"> 
             I am an open-minded and curious professional with a deep craving for knowledge, particularly in the ever-evolving world of technology.
@@ -60,31 +60,33 @@
 
     <!-- MY SKILLS PAGE -->
     <div id="skills" class="full-height">
-        <div class="skls"> <h1> MY SKILLS </h1> </div>
-        <div class="clusters"> 
-            <img src="./pics/html.png" class="html">
-            <img src="./pics/css-3.png" class="css">
-            <img src="./pics/java-script.png" class="js">
-            <img src="./pics/python.png" class="py">
-            <img src="./pics/java.png" class="java">
-        </div>
-        <div class="sdesc">
-            <p>Soft Skills</p> 
-            <p>Adaptability, Agility, Analytical thinking, Creative Problem-solving, Excellent Communication, 
-            Team Collaboration, Time management, Technical documentation </p>
-            <p> Programming Languages</p> 
-            <p>Python, SQL, R, HTML, CSS, JavaScript </p>
-            <p>Tools</p> 
-            <p>Microsoft packages, Google suite </p>
-            <p>Platforms</p>
-            <p>Jupyter Notebook, Visual Studio Code, GitHub</p>
+        <div class="skls"> <h1><em> MY SKILLS </em></h1> </div>
+        <div class="hold">
+            <div class="clusters"> 
+                <img src="./pics/html.png" class="html">
+                <img src="./pics/css-3.png" class="css">
+                <img src="./pics/java-script.png" class="js">
+                <img src="./pics/python.png" class="py">
+                <img src="./pics/java.png" class="java">
+            </div>
+            <div class="sdesc">
+                <p class="ss">Soft Skills</p> 
+                <p class="list">Adaptability, Agility, Analytical thinking, Creative Problem-solving, Excellent Communication, 
+                Team Collaboration, Time management, Technical documentation </p>
+                <p class="ss"> Programming Languages</p> 
+                <p class="list">Python, HTML, CSS, JavaScript </p>
+                <p class="ss">Tools</p> 
+                <p class="list">Microsoft packages, Google suite </p>
+                <p class="ss">Platforms</p>
+                <p class="list">Jupyter Notebook, Visual Studio Code, GitHub</p>
+            </div>
         </div>
     </div>
 
 
      <!-- PROJECTS DISPLAY -->
     <div id="projects" class="full-height">
-        <div class="work"> <h1> My Best Work </h1> </div>
+        <div class="work"> <h1><em> My Best Work </em></h1> </div>
         <div class="container">
             <img src="./pics/neoncs.png" class="proj1"> 
             <div class="title">
@@ -96,7 +98,7 @@
 
      <!-- AWARDED CERTIFICATES -->
     <div id="certificates" class="full-height"> 
-       <div class="cert"> <h1> My Credentials </h1> </div>
+       <div class="cert"> <h1><em> My Credentials </em></h1> </div>
        <div class="contain">
             <div class="herts">
                 <img src="./pics/UH.PNG">
@@ -118,24 +120,22 @@
 
 
     <!-- CONTACT ME! -->
-    <div id="contact" class="full-height">
-        <div class="yay"> <h1> GET IN TOUCH </h1> </div>
-        <div>
+    <footer id="contact">
             <div class="gl">
-                <img src="./pics/gmail.png" class="logo">
-                <p><a href="schola.knj@gmail.com" alt="gmail icon" class="texxt"> schola.knj@gmail.com </a></p>
-                
+                <a href="mailto:schola.knj@gmail.com" alt="gmail icon">
+                     <img src="./pics/gmail.png" class="logo"> 
+                </a>
             </div>
             <div class="ghl">
-               <img src="./pics/github.png" class="logo"> 
-              <p> <a href="https://github.com/WhisperLily" alt="github link" class="texxt"> github </a> </p>
-                
+              <a href="https://github.com/WhisperLily" alt="github link"> 
+                <img src="./pics/github.png" class="logo">     
+            </a>    
             </div>
             <div class="ll">
-                <img src="./pics/linkedin.png" alt="linkedin icon" class="logo">
-                <p><a href="https://www.linkedin.com/in/scholan/" class="texxt"> linkedin </a> </p> 
+                <a href="https://www.linkedin.com/in/scholan/"> 
+                    <img src="./pics/linkedin.png" alt="linkedin icon" class="logo">   
+                </a> 
             </div>
-        </div>
-    </div>
+        </footer>
 </body>
 </html>
