@@ -1,0 +1,206 @@
+/* Tablets */
+@media screen and (max-width:912px) and (min-width:768px) {
+
+
+.full-height { 
+    margin-left:30px;
+}
+
+
+.abt, .work, .cert{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:35px;
+} 
+
+
+/* NAV BAR */
+.texxt { /* hide horizontal menu bar for large screens */
+    display:none;
+}
+.menu-button { /* show menu button which is hidden on large screens */
+    display:block;
+}
+.sidebar { /* the width for the sidebar */
+    width:60%;
+    margin-right:15px;
+}
+
+ul { /* hide the border bottom on small screens */
+    border-bottom:none;
+}
+.ad {
+    margin-left:100px;
+    padding-bottom:30px;
+}
+.butn svg {
+    width:45px;
+    height:45px;
+}
+.verse {
+    font-size:25px;
+}
+
+
+ /* LANDING PAGE */ 
+.home {
+    margin-right:55px;
+}
+.welcome{
+    font-size:10px;
+}
+.name {
+    font-size:35px;
+}
+.memoji img{
+    padding-top:90px;
+    width:200px;
+    height:auto;
+}
+
+
+/* About section */
+.mypic {
+    width:140px;
+}
+#about p{
+    font-size:23px;
+}
+
+
+/* SKILLS SECTION */
+.skls {
+        text-align:center;
+        margin-top:35px;
+        margin-bottom:15px;
+        font-size:30px;
+}
+    
+    
+/* CERTIFICATES SECTION */
+.contain{
+    display:flex;
+    align-items:flex-start;
+}
+.award{
+    font-size:13px;
+}
+.herts img, .ieuk img, .au img {
+    width:90px;
+}
+.herts p, .ieuk p, .au p {
+    font-size:12px;
+}
+.herts, .ieuk, .au {
+    margin-bottom:25px;
+}
+
+
+/* CONTACTS SECTION */
+#contact {
+    width:100%;
+}
+}
+
+
+/* MOBILE PHONES */
+@media screen and (max-width:700px) {
+.full-height { 
+    margin-left:30px;
+}
+
+
+.abt, .work, .cert{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:35px;
+} 
+
+
+/* NAV BAR */
+.texxt { /* hide horizontal menu bar for large screens */
+    display:none;
+}
+.menu-button { /* show menu button which is hidden on large screens */
+    display:block;
+}
+.sidebar { /* the width for the sidebar */
+    width:60%;
+    margin-right:15px;
+}
+
+ul { /* hide the border bottom on small screens */
+    border-bottom:none;
+}
+.ad {
+    margin-left:100px;
+    padding-bottom:30px;
+}
+
+
+ /* LANDING PAGE */ 
+.home {
+    margin-right:55px;
+    margin-left:15px;
+}
+.welcome{
+    font-size:10px;
+}
+.name {
+    font-size:35px;
+}
+.memoji img{
+    padding-top:90px;
+    width:200px;
+    height:auto;
+}
+
+
+/* About section */
+.mypic {
+    display:block;
+    margin:auto;
+    width:140px;
+    float:none;
+}
+#about p{
+    margin-left:30px;
+    font-size:18px;
+}
+
+
+/* SKILLS SECTION */
+.skls {
+        text-align:center;
+        margin-top:35px;
+        margin-bottom:15px;
+        font-size:20px;
+}
+    
+    
+/* CERTIFICATES SECTION */
+.contain{
+    display:block;
+}
+.award{
+    font-size:13px;
+}
+.herts img, .ieuk img, .au img {
+    width:90px;
+}
+.herts p, .ieuk p, .au p {
+    font-size:12px;
+}
+.herts, .ieuk, .au {
+    margin-bottom:25px;
+}
+
+
+/* CONTACTS SECTION */
+#contact {
+    width:540px;
+}
+}
+
+
+

@@ -61,6 +61,34 @@ li a{
     position:fixed;
     text-shadow:0 0 15px #ff5975;
 }
+.menu-button { /* show menu button on large screens */
+    display:none;
+}
+
+/* ONLY FOR MOBILE PHONES */
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:1000;
+    background-color:#a1745473;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 15px white;
+    display:none;
+    flex-direction:column;
+    justify-content:flex-start;
+    
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar a{
+    width:100%;
+    display:flex;
+    align-items:center;
+}
 
 
 /* CSS FOR THE HOME SECTION */
@@ -130,6 +158,7 @@ li a{
     width:70px;
     height:auto;
     padding:10px;
+    /*background-color:#FFFFFF;*/
     border-radius:50%;
     transition: transform 0.3s ease;
 }
@@ -206,7 +235,6 @@ li a{
 #contact {
     margin-top: auto;
     background-color:#a17454;
-    padding: 20px 0;
     text-align: center;
     display:flex;
     justify-content:center;
@@ -216,7 +244,8 @@ li a{
     transition: transform 0.3s ease;
 }
 .logo:hover {
-   transform: scale(1.6); /* Scales the element by 1.5 times */
+   transform:scale(1.6); 
+}
 .ghl img, .ll img {
     background-color:#FFFFFF;
     border-radius:7px;

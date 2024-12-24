@@ -4,12 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SCHOLA's WebPage </title>
+
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="./style.css" media="screen">
+    <link rel="stylesheet" href="./screens.css" media="screen">
+
+    <!-- JavaScript Stylesheets -->
+    <script src="./screens.js" defer></script>
 </head>
 
 <body>
 <!-- NAVIGATION BAR -->
     <div class="pgOptn"> 
+        <ul class="sidebar" > <!-- the side bar for small screens -->
+            <li onclick=hideSidebar() class="butn"><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+            <li><a href="#home" class="ad" onclick=hideSidebar()> HOME </a></li>
+            <li><a href="#about" class="ad" onclick=hideSidebar()> ABOUT ME </a></li>
+            <li><a href="#skills" class="ad" onclick=hideSidebar()> MY SKILLS </a></li>
+            <li><a href="#projects" class="ad" onclick=hideSidebar()> PROJECTS </a></li>
+            <li><a href="#certificates" class="ad" onclick=hideSidebar()> CREDENTIALS </a></li> 
+            <li><a href="#contact" class="ad" onclick=hideSidebar()> CONTACT </a></li>
+        </ul> 
         <ul>
             <li><a href="#home" class="texxt"> HOME </a></li>
             <li><a href="#about" class="texxt"> ABOUT ME </a></li>
@@ -17,6 +32,8 @@
             <li><a href="#projects" class="texxt"> PROJECTS </a></li>
             <li><a href="#certificates" class="texxt"> CREDENTIALS </a></li> 
             <li><a href="#contact" class="texxt"> CONTACT </a></li>
+            <li class="menu-button" onclick=showSidebar() class="butn"><a href="#">  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
+           
         </ul> 
     </div>
 <!-- Bible verse separated into a div to meet design expectation. 
@@ -115,7 +132,7 @@
                 <p> ASTON UNIVERSITY </p>
                 <div class="award"> MSc Applied Artificial Intelligence - 2025 </div>
             </div>
-    </div>
+        </div>
     </div>
 
 
@@ -136,6 +153,6 @@
                     <img src="./pics/linkedin.png" alt="linkedin icon" class="logo">   
                 </a> 
             </div>
-        </footer>
+        </footer>    
 </body>
 </html>
