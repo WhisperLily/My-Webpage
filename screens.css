@@ -255,9 +255,11 @@
     .home {
         flex: 1;
         flex-wrap:wrap;
+        max-width: 50%;
     }
 
     .memoji {
+        max-width: 50%;
         flex: 1;
         display: flex;
         justify-content: center;
