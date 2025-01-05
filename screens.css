@@ -291,6 +291,7 @@
         height:auto;
         text-align:center;
         padding:0.8125rem;
+    }
 }
 @media screen and (max-width: 480px) {
     .memoji {
@@ -304,5 +305,4 @@
         flex: 0 0 auto;
     }
 
-}
 }
