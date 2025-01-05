@@ -1,28 +1,3 @@
-@media screen and (max-width: 1200px) {
-    html {
-        font-size: 15px; /* Slightly reduce overall font size */
-    }
-
-    .sidebar {
-        width: 50%; /* Narrow the sidebar for medium screens */
-    }
-
-    .memoji img {
-        width: 220px; /* Reduce size of images */
-        height: auto;
-    }
-
-    .home {
-        margin-right: 40px;
-        margin-left: 40px; /* Adjust spacing for landing page */
-    }
-
-    .menu-button {
-        display: block; /* Ensure menu button is visible */
-    }
-}
-
-
 
 /* Tablets */
 @media screen and (max-width:912px) {
