@@ -1,2 +1,2 @@
-This is my website (desktop or ipad olny for now). 
+This is my website. 
 Visit to see projects and know more about me :)
