@@ -1,12 +1,38 @@
-/* Tablets */
-@media screen and (max-width:912px) and (min-width:768px) {
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 15px; /* Slightly reduce overall font size */
+    }
 
+    .sidebar {
+        width: 50%; /* Narrow the sidebar for medium screens */
+    }
 
-.full-height { 
-    margin-left:30px;
+    .memoji img {
+        width: 220px; /* Reduce size of images */
+        height: auto;
+    }
+
+    .home {
+        margin-right: 40px;
+        margin-left: 40px; /* Adjust spacing for landing page */
+    }
+
+    .menu-button {
+        display: block; /* Ensure menu button is visible */
+    }
 }
 
 
+
+/* Tablets */
+@media screen and (max-width:912px) {
+
+html {
+    font-size: 14px; /* Adjust font size for tablets */
+}
+.full-height { 
+    margin-left:30px;
+}
 .abt, .work, .cert{
     text-align:center;
     font-size:30px;
@@ -22,7 +48,7 @@
     display:block;
 }
 .sidebar { /* the width for the sidebar */
-    width:60%;
+    width:50%;
     margin-right:15px;
 }
 
@@ -56,12 +82,15 @@ ul { /* hide the border bottom on small screens */
     padding-top:90px;
     width:200px;
     height:auto;
+    margin-top: 0;
 }
 
 
 /* About section */
 .mypic {
     width:140px;
+    margin: 0 auto; /* Center align */
+    padding: 0;
 }
 #about p{
     font-size:23px;
@@ -103,8 +132,12 @@ ul { /* hide the border bottom on small screens */
 }
 
 
+
 /* MOBILE PHONES */
 @media screen and (max-width:700px) {
+html {
+    font-size: 13px; /* Further reduce font size for phones */
+}
 .full-height { 
     margin-left:30px;
 }
@@ -124,6 +157,10 @@ ul { /* hide the border bottom on small screens */
 .menu-button { /* show menu button which is hidden on large screens */
     display:block;
 }
+.menu-button svg {
+    width: 35px;
+    height: 35px;
+}
 .sidebar { /* the width for the sidebar */
     width:60%;
     margin-right:15px;
@@ -140,8 +177,8 @@ ul { /* hide the border bottom on small screens */
 
  /* LANDING PAGE */ 
 .home {
-    margin-right:55px;
-    margin-left:15px;
+    margin-left:20px;
+    margin-right:20px;
 }
 .welcome{
     font-size:10px;
@@ -150,17 +187,18 @@ ul { /* hide the border bottom on small screens */
     font-size:35px;
 }
 .memoji img{
-    padding-top:90px;
-    width:200px;
+    width:180px;
     height:auto;
+    padding-top:90px;
 }
 
 
 /* About section */
 .mypic {
     display:block;
-    margin:auto;
     width:140px;
+    margin:0 auto;
+    padding:0;
     float:none;
 }
 #about p{
@@ -204,3 +242,17 @@ ul { /* hide the border bottom on small screens */
 
 
 
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px; /* Smallest font size for small devices */
+    }
+
+    .clusters img {
+        width: 50px;
+    }
+
+    .menu-button svg {
+        width: 30px;
+        height: 30px;
+    }
+}
