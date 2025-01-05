@@ -1,7 +1,4 @@
 /* CSS FOR SEVERAL ELEMENTS */
-html {
-    font-size: 16px;
-}
 * { 
     padding:0;
     margin:0;
@@ -10,19 +7,16 @@ html {
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color:#232F3E;
-    /* #e2d4c1; */
+    font-size: 16px;
     max-width:100%;
     overflow-x:hidden;
-}
-img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Prevent inline spacing issues */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 /* separate section to cover screen viewport */
 .full-height { 
     height:100vh;
-    margin-left:70px;
     scroll-margin-top:120px;
 }
 .abt, .skls, .work, .cert {
@@ -33,6 +27,10 @@ img {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow:0 0 15px #a17454;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* style navigation bar */
@@ -40,7 +38,7 @@ img {
     position:fixed;
     top:0;
     right:0;
-    width:700px;
+    max-width: 700px;
     margin-right:10px;
 }
 ul {
@@ -57,7 +55,6 @@ li {
 li a{
     text-decoration:none;
     color:#FFFFFF;
-    font-size: calc(0.8em + 0.5vw); /* Dynamically scale text size */
     font-weight:700;
     display: inline-block; /* Ensures transform works */
     transition: transform 0.3s ease;
@@ -83,7 +80,8 @@ li a{
     top:0;
     right:0;
     height:100vh;
-    width:250px;
+    width:80%;
+    max-width: 250px;
     z-index:1000;
     background-color:#a1745473;
     backdrop-filter:blur(10px);
@@ -91,7 +89,6 @@ li a{
     display:none;
     flex-direction:column;
     justify-content:flex-start;
-    
 }
 .sidebar li{
     width:100%;
@@ -106,27 +103,27 @@ li a{
 /* CSS FOR THE HOME SECTION */
 #home{
     display:flex;
+    flex-wrap: wrap;
     align-items:center;
     justify-content:center;
-    margin-left:100px;
+    padding: 0 5%;
     font-weight:600;
 }
 .home {
-    margin-right:150px;
+    margin-right:10%;
 }
 .welcome{
-    font-size:20px;
+    font-size:1.25rem;
 }
 .name {
-    font-size:70px;
+    font-size:4.375rem;
     padding-bottom:30px;
     color:palevioletred;
 }
 .memoji img{
-    max-width: 100%;
     margin-top:-140px;
-    width:420px;
-    height:auto;
+    width:100%;
+    max-width:420px;
 }
 .hometext  {
     color:#FFFFFF;
@@ -140,22 +137,24 @@ li a{
 
 /* CSS FOR THE ABOUT ME SECTION */
 #about {
-    width:80%;
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
 } 
 .mypic {
-    max-width: 100%;
     float:left;
-    width:300px;
+    width: 100%;
+    max-width:300px;
     height:auto;
     object-fit:cover;
-    margin-right:20px;
-    padding-left:20px;
+    margin-right:1.25em;
+    padding-left:1.25em;
     aspect-ratio: 2 / 2;
     border-radius:50%;
 }
 #about p{
     text-align:center;
-    font-size:23px;
+    font-size:1.4375rem;
 }
 
 
@@ -220,7 +219,6 @@ li a{
 }
 .herts img, .ieuk img, .au img {
     display:block;
-    max-width: 100%;
     margin:auto;
     width:120px;
     object-fit:fill;
@@ -265,4 +263,3 @@ li a{
     background-color:#FFFFFF;
     border-radius:7px;
 }
-

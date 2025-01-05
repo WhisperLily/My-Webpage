@@ -1,233 +1,45 @@
-
-/* Tablets */
-@media screen and (max-width:912px) {
-
-html {
-    font-size: 14px; /* Adjust font size for tablets */
-}
-.full-height { 
-    margin-left:30px;
-}
-.abt, .work, .cert{
-    text-align:center;
-    font-size:30px;
-    margin-bottom:35px;
-} 
-
-
-/* NAV BAR */
-.texxt { /* hide horizontal menu bar for large screens */
-    display:none;
-}
-.menu-button { /* show menu button which is hidden on large screens */
-    display:block;
-}
-.sidebar { /* the width for the sidebar */
-    width:50%;
-    margin-right:15px;
-}
-
-ul { /* hide the border bottom on small screens */
-    border-bottom:none;
-}
-.ad {
-    margin-left:100px;
-    padding-bottom:30px;
-}
-.butn svg {
-    width:45px;
-    height:45px;
-}
-.verse {
-    font-size:25px;
+@media screen and (max-width: 912px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .full-height {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  #home {
+    flex-direction: column;
+  }
 }
 
 
- /* LANDING PAGE */ 
-.home {
-    margin-right:55px;
-}
-.welcome{
-    font-size:10px;
-}
-.name {
-    font-size:35px;
-}
-.memoji img{
-    padding-top:90px;
-    width:200px;
-    height:auto;
-    margin-top: 0;
-}
+@media screen and (max-width: 768px) {
+    .pgOptn {
+        width: 100%;
+        max-width: none;
+    }
 
+    .contain {
+        flex-direction: column;
+    }
 
-/* About section */
-.mypic {
-    width:140px;
-    margin: 0 auto; /* Center align */
-    padding: 0;
+    .herts, .ieuk, .au {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
-#about p{
-    font-size:23px;
-}
-
-
-/* SKILLS SECTION */
-.skls {
-        text-align:center;
-        margin-top:35px;
-        margin-bottom:15px;
-        font-size:30px;
-}
-    
-    
-/* CERTIFICATES SECTION */
-.contain{
-    display:flex;
-    align-items:flex-start;
-}
-.award{
-    font-size:13px;
-}
-.herts img, .ieuk img, .au img {
-    width:90px;
-}
-.herts p, .ieuk p, .au p {
-    font-size:12px;
-}
-.herts, .ieuk, .au {
-    margin-bottom:25px;
-}
-
-
-/* CONTACTS SECTION */
-#contact {
-    width:100%;
-}
-}
-
-
-
-/* MOBILE PHONES */
-@media screen and (max-width:700px) {
-html {
-    font-size: 13px; /* Further reduce font size for phones */
-}
-.full-height { 
-    margin-left:30px;
-}
-
-
-.abt, .work, .cert{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:35px;
-} 
-
-
-/* NAV BAR */
-.texxt { /* hide horizontal menu bar for large screens */
-    display:none;
-}
-.menu-button { /* show menu button which is hidden on large screens */
-    display:block;
-}
-.menu-button svg {
-    width: 35px;
-    height: 35px;
-}
-.sidebar { /* the width for the sidebar */
-    width:60%;
-    margin-right:15px;
-}
-
-ul { /* hide the border bottom on small screens */
-    border-bottom:none;
-}
-.ad {
-    margin-left:100px;
-    padding-bottom:30px;
-}
-
-
- /* LANDING PAGE */ 
-.home {
-    margin-left:20px;
-    margin-right:20px;
-}
-.welcome{
-    font-size:10px;
-}
-.name {
-    font-size:35px;
-}
-.memoji img{
-    width:180px;
-    height:auto;
-    padding-top:90px;
-}
-
-
-/* About section */
-.mypic {
-    display:block;
-    width:140px;
-    margin:0 auto;
-    padding:0;
-    float:none;
-}
-#about p{
-    margin-left:30px;
-    font-size:18px;
-}
-
-
-/* SKILLS SECTION */
-.skls {
-        text-align:center;
-        margin-top:35px;
-        margin-bottom:15px;
-        font-size:20px;
-}
-    
-    
-/* CERTIFICATES SECTION */
-.contain{
-    display:block;
-}
-.award{
-    font-size:13px;
-}
-.herts img, .ieuk img, .au img {
-    width:90px;
-}
-.herts p, .ieuk p, .au p {
-    font-size:12px;
-}
-.herts, .ieuk, .au {
-    margin-bottom:25px;
-}
-
-
-/* CONTACTS SECTION */
-#contact {
-    width:540px;
-}
-}
-
 
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 12px; /* Smallest font size for small devices */
+        font-size: 12px;
     }
-
     .clusters img {
-        width: 50px;
-    }
+            width: 50px;
+        }
 
-    .menu-button svg {
-        width: 30px;
-        height: 30px;
-    }
+    .hold {
+            grid-template-columns: 100%;
+        }
 }
