@@ -6,13 +6,13 @@
         font-size: 14px; /* Adjust font size for tablets */
     }
     .full-height { 
-        margin-left:30px;
+        margin-left:1.875rem;
         min-height: 100vh;
     }
     .abt, .work, .cert{
         text-align:center;
-        font-size:30px;
-        margin-bottom:35px;
+        font-size:1.875rem;
+        margin-bottom:2.1875rem;
     } 
 
 
@@ -24,32 +24,32 @@
         display:block;
     }
     .sidebar { /* the width for the sidebar */
-        width:50%;
-        margin-right:15px;
+        width:60%;
+        margin-right:1rem;
     }
 
     ul { /* hide the border bottom on small screens */
         border-bottom:none;
     }
     .ad {
-        margin-left:100px;
-        padding-bottom:30px;
+        margin-left:6.25rem;
+        padding-bottom:1.875rem;
     }
     .butn svg {
-        width:45px;
-        height:45px;
+        width:2.8125rem;
+        height:2.8125rem;
     }
     .verse {
-        font-size:25px;
+        font-size:1.5625rem;
     }
 
 
     /* LANDING PAGE */ 
     #home {
-        flex-direction: column;
+        flex-direction:row;
     }
     .home {
-        margin-right:55px;
+        margin-right:3.4375rem;
     }
     .welcome{
         font-size:0.625rem;;
@@ -58,30 +58,29 @@
         font-size:2.1875rem;
     }
     .memoji img{
-        padding-top:90px;
-        width:200px;
+        padding-top:5.625rem;
+        width:12.5rem;
         height:auto;
-        margin-top: 0;
+        margin-top:0;
     }
 
 
     /* About section */
     .mypic {
-        width:140px;
-        margin: 0 auto; /* Center align */
-        padding: 0;
+        width:8.75rem;
+        margin:auto; /* Center align */
     }
     #about p{
-        font-size:23px;
+        font-size:1.4375rem;
     }
 
 
     /* SKILLS SECTION */
     .skls {
             text-align:center;
-            margin-top:35px;
-            margin-bottom:15px;
-            font-size:30px;
+            margin-top:2.1875rem;
+            margin-bottom:0.9375rem;
+            font-size:1.875rem;
     }
         
         
@@ -91,16 +90,16 @@
         align-items:flex-start;
     }
     .award{
-        font-size:13px;
+        font-size:0.8125rem;
     }
     .herts img, .ieuk img, .au img {
-        width:90px;
+        width:5.625rem;
     }
     .herts p, .ieuk p, .au p {
-        font-size:12px;
+        font-size:0.75rem;
     }
     .herts, .ieuk, .au {
-        margin-bottom:25px;
+        margin-bottom:1.5625rem;
     }
 
 
@@ -119,17 +118,21 @@
         max-width: none;
     }
     html {
-        font-size: 13px; /* Further reduce font size for phones */
+        font-size:0.8125rem; /* Further reduce font size for phones */
     }
     .full-height { 
-        margin-left:30px;
+        padding-top: 7.5rem;
+        margin-left:1.875rem;
+        min-height:100vh;
+        scroll-margin-top:7.5rem;
+        overflow-y: auto;
     }
 
 
     .abt, .work, .cert{
         text-align:center;
-        font-size:20px;
-        margin-bottom:35px;
+        font-size:1.25rem;
+        margin-bottom:2.1875rem;
     } 
 
 
@@ -141,27 +144,27 @@
         display:block;
     }
     .menu-button svg {
-        width: 35px;
-        height: 35px;
+        width:2.1875rem;
+        height:2.1875rem;
     }
     .sidebar { /* the width for the sidebar */
         width:60%;
-        margin-right:15px;
+        margin-right:1rem;
     }
 
     ul { /* hide the border bottom on small screens */
         border-bottom:none;
     }
     .ad {
-        margin-left:100px;
-        padding-bottom:30px;
+        margin-left:6.25rem;
+        padding-bottom:1.875rem;
     }
 
 
     /* LANDING PAGE */ 
     .home {
-        margin-left:20px;
-        margin-right:20px;
+        margin-left:1.25rem;
+        margin-right:1.25rem;
     }
     .welcome{
         font-size:0.625rem;
@@ -170,79 +173,136 @@
         font-size:2.1875rem;
     }
     .memoji img{
-        width:180px;
+        width:11.25rem;
         height:auto;
-        padding-top:90px;
+        margin-top:-5.6rem;
     }
 
 
     /* About section */
     .mypic {
         display:block;
-        width:140px;
-        margin:0 auto;
-        padding:0;
+        width:8.75rem;
+        margin:auto;
         float:none;
     }
     #about p{
-        margin-left:30px;
-        font-size:18px;
+        margin-left:1.875rem;
+        font-size:1.125rem;
     }
 
 
     /* SKILLS SECTION */
     .skls {
             text-align:center;
-            margin-top:35px;
-            margin-bottom:15px;
-            font-size:20px;
+            margin-top:2.1875rem;
+            margin-bottom:0.9375rem;
+            font-size:1.25rem;
     }
         
         
     /* CERTIFICATES SECTION */
     .contain{
         display:flex;
-        flex-direction: column;
+        flex-direction:row;
     }
     .award{
-        font-size:13px;
+        font-size:0.8125rem;
     }
     .herts img, .ieuk img, .au img {
-        width:90px;
+        width:5.625rem;
     }
     .herts p, .ieuk p, .au p {
-        font-size:12px;
+        font-size:0.75rem;
+        border-bottom:double #a17454 0.3rem;
     }
     .herts, .ieuk, .au {
         width: 100%;
-        margin-bottom:25px;
+        margin-bottom:3rem;
     }
 
 
     /* CONTACTS SECTION */
     #contact {
         width:100%;
-        max-width: 540px;
+        max-width: 33.75rem;
     }
 }
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 624px) {
     html {
-        font-size: 12px; /* Smallest font size for small devices */
+        font-size: 0.75rem; /* Smallest font size for small devices */
+    }
+    .full-height { 
+        padding-top: 7.5rem;
+        margin-left:1.875rem;
+        min-height:100vh;
+        scroll-margin-top:7.5rem;
+        overflow-y: auto;
+    }
+    #home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 100vh;
+}
+
+    .home {
+        flex: 1;
+        flex-wrap:wrap;
+    }
+
+    .memoji {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top:-15rem;
+    }
+
+    .memoji img{
+        width:11.25rem;
+        flex: 0 0 auto;
     }
 
     .clusters img {
-        width: 50px;
+        width: 3.125rem;
     }
 
     .hold {
-            grid-template-columns: 100%;
-        }
+        display:grid;
+        grid-template-columns:50% 50%;
+    }
 
     .menu-button svg {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
+    .contain{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .herts, .ieuk, .au {
+        width:12.25rem;
+        height:auto;
+        text-align:center;
+        padding:0.8125rem;
+}
+@media screen and (max-width: 480px) {
+    .memoji {
+        flex: 1;
+        display: flex;
+        justify-content:center;
+        margin-top:-13rem;
+    }
+    .memoji img{
+        width:7rem;
+        flex: 0 0 auto;
+    }
+
+}
 }

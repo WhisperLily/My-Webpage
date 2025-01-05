@@ -10,27 +10,25 @@ body{
     font-size: 16px;
     max-width:100%;
     overflow-x:hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
 }
 /* separate section to cover screen viewport */
 .full-height { 
     height:100vh;
-    scroll-margin-top:120px;
+    margin-left:4.375rem;
+    scroll-margin-top:7.5rem;
 }
 .abt, .skls, .work, .cert {
     text-align:center;
-    margin-bottom:70px;
-    font-size:50px;
+    margin-bottom:4.375rem;
+    font-size:3.125rem;
     font-weight:500;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow:0 0 15px #a17454;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+                    /*img {
+                    max-width: 100%;
+                    height: auto;
+                    }*/
 
 
 /* style navigation bar */
@@ -39,7 +37,7 @@ img {
     top:0;
     right:0;
     max-width: 700px;
-    margin-right:10px;
+    margin-right:0.63rem;
 }
 ul {
     display:flex;
@@ -50,7 +48,7 @@ ul {
 }
 li {
     list-style-type:none;
-    padding:10px;
+    padding:0.63rem;
 }
 li a{
     text-decoration:none;
@@ -63,10 +61,10 @@ li a{
    transform: scale(1.2); /* Scales the element by 1.5 times */
 }
 .verse {
-    margin-left:20px;
-    padding:10px;
+    margin-left:1.25rem;
+    padding:0.63rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-size:1.25rem;
     position:fixed;
     text-shadow:0 0 15px #ff5975;
 }
@@ -106,7 +104,6 @@ li a{
     flex-wrap: wrap;
     align-items:center;
     justify-content:center;
-    padding: 0 5%;
     font-weight:600;
 }
 .home {
@@ -117,13 +114,14 @@ li a{
 }
 .name {
     font-size:4.375rem;
-    padding-bottom:30px;
+    padding-bottom:1.875rem;
     color:palevioletred;
 }
 .memoji img{
     margin-top:-140px;
-    width:100%;
-    max-width:420px;
+    width:26.25rem;
+    height:auto;
+    /*max-width:420px;*/
 }
 .hometext  {
     color:#FFFFFF;
@@ -139,11 +137,11 @@ li a{
 #about {
     width:90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:auto;
 } 
 .mypic {
     float:left;
-    width: 100%;
+    width:18.75rem;
     max-width:300px;
     height:auto;
     object-fit:cover;
@@ -168,9 +166,9 @@ li a{
     margin: auto;
 }
 .clusters img{
-    width:70px;
+    width:4.375rem;
     height:auto;
-    padding:10px;
+    padding:0.625rem;
     /*background-color:#FFFFFF;*/
     border-radius:50%;
     transition: transform 0.3s ease;
@@ -180,14 +178,14 @@ li a{
 }
 .ss {
    text-transform:uppercase;
-   font-size:25px;
+   font-size:1.5625rem;
    font-weight:800;
    padding-bottom:5px; 
-   padding-top:45px;
+   padding-top:2.8125rem;
    color:#e38ba9;
 }
 .list {
-    font-size:16px;
+    font-size:1rem;
 }
 
 
@@ -213,47 +211,47 @@ li a{
     align-items:center;
 }
 .herts, .ieuk, .au {
-    width:400px;
+    width:25rem;
     height:auto;
     text-align:center;
 }
 .herts img, .ieuk img, .au img {
     display:block;
     margin:auto;
-    width:120px;
+    width:7.5rem;
     object-fit:fill;
     border-radius:10%;
 }
 .herts p, .ieuk p, .au p {
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-right:20px;
-    border-bottom:solid #a17454 8px;
-    font-size:17px;
+    padding-top:0.63rem;
+    padding-bottom:0.63rem;
+    margin-right:1.25rem;
+    border-bottom:double #a17454 0.5rem;
+    font-size:1.06rem;
     font-weight:900;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .award {
-    padding-top:20px;
+    padding-top:1.25rem;
     font-weight:900;
     color:#FFFFFF;
-    font-size:16px;
+    font-size:1rem;
 }
 
 
 /* CSS FOR THE CONTACTS SECTION */
 .gl, .ghl, .ll {
-    padding:15px;
+    padding:1rem;
 }
 #contact {
     margin-top: auto;
     background-color:#a17454;
-    text-align: center;
+    text-align:center;
     display:flex;
     justify-content:center;
 } 
 .logo {
-    height:40px;
+    height:2.5rem;
     transition: transform 0.3s ease;
 }
 .logo:hover {
