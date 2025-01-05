@@ -10,12 +10,9 @@ body{
     font-size: 16px;
     max-width:100%;
     overflow-x:hidden;
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-=======
->>>>>>> 2541043ca9c9916b4028e442436540702cf3354d
 }
 /* separate section to cover screen viewport */
 .full-height { 
