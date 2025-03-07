@@ -26,8 +26,8 @@ body{
     text-shadow:0 0 15px #a17454;
 }
 .interests {
-margin-top: 2.1875rem;
-margin-left: 20.9375rem;
+    margin-top: 2.1875rem;
+    margin-left: 20.9375rem;
 }
 .inc{
     font-size:1.5625rem;
@@ -78,7 +78,7 @@ li a{
   width:8rem;
   font-size:0.875rem;
   text-align:center;
-  background-color:#ff5975;
+  background-color:#ff597559;
   color: #fff;
   border-radius:6px;
   padding:5px;
@@ -173,7 +173,7 @@ li a{
     aspect-ratio: 2 / 2;
     border-radius:50%;
 }
-#about p{
+.desMe{
     /*text-align:center;*/
     font-size:1.4375rem;
 }
@@ -215,14 +215,14 @@ li a{
 /* CSS FOR THE PROJECT SECTION */
 .container{
     display:flex;
-    align-items:left;  
+    align-items:flex-start;  
 }
 .ws, .zodiac {
     margin-left:1.5625rem;
     background-color:#232F3E;
     width:35rem;
     border-radius:0.9375rem;
-    border:#a1745473 solid 2px;
+    border-right:#a1745473 solid 2px;
     padding:1.25rem;  
 }
 .zodiac{

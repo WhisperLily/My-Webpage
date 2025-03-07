@@ -70,8 +70,11 @@
         width:8.75rem;
         margin:auto; /* Center align */
     }
-    #about p{
+    .desMe{
         font-size:1.4375rem;
+    }
+    .interests {
+        margin-left:1.875rem;
     }
 
 
@@ -85,7 +88,10 @@
         
     
     /* PROJECTS SECTION */
-    
+    .container{
+        display:flex;
+        align-items:flex-start;
+    }
 
     /* CERTIFICATES SECTION */
     .contain{
@@ -189,9 +195,18 @@
         margin:auto;
         float:none;
     }
-    #about p{
+    .moi{
+        margin-top:2rem;
+    }
+    .desMe{
         margin-left:1.875rem;
         font-size:1.125rem;
+    }
+    .interests {
+        margin-left:1.875rem;
+    }
+    verse:active.tooltip {
+        visibility: visible;
     }
 
 
@@ -202,7 +217,31 @@
             margin-bottom:0.9375rem;
             font-size:1.25rem;
     }
-        
+
+
+    /* PROJECTS SECTION */
+    #projects{
+        height:auto;
+    }
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        gap:1.5rem;
+    }
+    .ws, .zodiac {
+        width:90%;
+        height:auto;
+        border-bottom:#a1745473 solid 2px;
+        border-right:none;
+    }
+    .proj1, .proj2 {
+        height:auto;
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+    
         
     /* CERTIFICATES SECTION */
     .contain{
@@ -297,6 +336,8 @@
         text-align:center;
         padding:0.8125rem;
     }
+   
+
 }
 @media screen and (max-width: 480px) {
     .memoji {
@@ -309,6 +350,7 @@
         width:7rem;
         flex: 0 0 auto;
     }
+
 
     @media screen and (max-width: 405px) {
     .memoji {
