@@ -232,9 +232,7 @@
     .ws, .zodiac {
         width:90%;
         height:auto;
-        border-bottom:#a1745473 solid 2px;
-        border-right:none;
-        margin-left:1rem;
+        margin:none;
 
     }
     .proj1, .proj2 {
