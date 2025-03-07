@@ -226,6 +226,7 @@
     .container{
         display:flex;
         flex-wrap:wrap;
+        justify-content:flex-start;
         gap:1.5rem;
     }
     .ws, .zodiac {
@@ -233,6 +234,8 @@
         height:auto;
         border-bottom:#a1745473 solid 2px;
         border-right:none;
+        margin-left:1rem;
+
     }
     .proj1, .proj2 {
         height:auto;
