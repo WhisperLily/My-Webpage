@@ -85,7 +85,7 @@
         
         
     /* CERTIFICATES SECTION */
-    .contain{
+    .contain, .container{
         display:flex;
         align-items:flex-start;
     }
@@ -202,7 +202,7 @@
         
         
     /* CERTIFICATES SECTION */
-    .contain{
+    .contain, .container{
         display:flex;
         flex-direction:row;
     }
@@ -284,7 +284,7 @@
         width: 1.875rem;
         height: 1.875rem;
     }
-    .contain{
+    .contain, .container{
         display:flex;
         flex-wrap:wrap;
     }
