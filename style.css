@@ -25,10 +25,15 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow:0 0 15px #a17454;
 }
-                    /*img {
-                    max-width: 100%;
-                    height: auto;
-                    }*/
+.interests {
+margin-top: 2.1875rem;
+margin-left: 20.9375rem;
+}
+.inc{
+    font-size:1.5625rem;
+    font-weight:BOLD;
+    color:palevioletred;
+}
 
 
 /* style navigation bar */
@@ -67,6 +72,24 @@ li a{
     font-size:1.25rem;
     position:fixed;
     text-shadow:0 0 15px #ff5975;
+}
+.tooltip {
+  visibility: hidden;
+  width:8rem;
+  font-size:0.875rem;
+  text-align:center;
+  background-color:#ff5975;
+  color: #fff;
+  border-radius:6px;
+  padding:5px;
+  margin-left:5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.verse:hover .tooltip {
+  visibility: visible;
 }
 .menu-button { /* show menu button on large screens */
     display:none;
@@ -190,18 +213,52 @@ li a{
 
 
 /* CSS FOR THE PROJECT SECTION */
-.container {
+.container{
+    display:flex;
+    align-items:left;  
+}
+.ws, .zodiac {
+    margin-left:1.5625rem;
     background-color:#232F3E;
-    width:fit-content;
-    border-radius: 15px;
+    width:35rem;
+    border-radius:0.9375rem;
+    border:#a1745473 solid 2px;
+    padding:1.25rem;  
+}
+.zodiac{
+    height:fit-content;
+}
+.proj_id{
+    font-size:1.25rem;
+    font-weight:800;
+    color:palevioletred;
+    padding-left:0.875rem;
 }
 .proj1 {
-    height:260px;
-    width:auto;
-    border-radius:15px;
+    height:auto;
+    width:30rem;
+    border-radius:0.9375rem;
+}
+.proj2 {
+    height:auto;
+    width:30rem;
+    border-radius:0.9375rem;
 }
 .title {
-    text-align:center;
+    display: block;
+    width:28.13rem;
+    padding-top:1rem;
+}
+.txxxt{
+    padding:0.875rem;
+}
+.icons{
+    height:1.5rem;
+    background-color:#FFFFFF;
+    border-radius:7px;
+}
+.move{
+    padding-left:0.875rem;
 }
 
 
