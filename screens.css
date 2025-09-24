@@ -9,7 +9,6 @@
         min-height: 60vh !important;
         padding: 6rem 0 !important;
     }
-    
     .home {
         min-height: 70vh !important;
         height: auto !important;
@@ -21,7 +20,6 @@
     .menu-button {
         display: block !important;
     }
-    
     .sidebar {
         display: flex !important;
         position: fixed;
@@ -37,30 +35,25 @@
         z-index: 2000;
         list-style: none;
     }
-    
     .sidebar.show {
         right: 0;
     }
-    
     .sidebar li {
         list-style: none;
         margin: 1rem 0;
     }
-    
     .sidebar a {
-        color: white;
+        color: silver;
         text-decoration: none;
         font-size: 1.1rem;
         display: block;
         padding: 0.5rem;
     }
-    
     .abt-tin {
         flex-direction: column;
         padding: 0 2rem !important;
         text-align: center;
     }
-    
     .project-grid,
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -69,18 +62,17 @@
     }
 }
 
+
 @media screen and (max-width: 768px) {
     section {
         height: auto !important;
         min-height: 50vh !important;
         padding: 5rem 0 !important;
     }
-    
     .home {
         min-height: 60vh !important;
         padding: 4rem 0 !important;
     }
-    
     main {
         margin-top: 6rem !important;
     }
@@ -88,30 +80,40 @@
         font-size: 64px !important;
         letter-spacing: -3px !important;
     }
-    
     .home .subtitle {
         font-size: 18px !important;
     }
-    
     .project-grid,
     .skills-grid {
         grid-template-columns: 1fr !important;
         margin-left: 2rem !important;
         margin-right: 2rem !important;
     }
-    
     .contact-buttons {
         flex-direction: row;
         align-items: center;
         gap: 1rem;
     }
-    
     .more-info {
         width: 90% !important;
         height: 80vh !important;
         padding: 2rem !important;
+        margin: 0 !important; /* Remove the 2rem margin causing imbalance */
+        left: 50% !important;
+        transform: translateX(-50%) !important; /* Center horizontally only */
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important; /* Perfect center */
+    }
+    .more-header {
+        text-align: center !important;
+        padding: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .more-header h3 {
+        font-size: 1.1rem !important;
     }
 }
+
 
 @media screen and (max-width: 624px) {
     section {
@@ -119,7 +121,6 @@
         min-height: auto !important;
         padding: 4rem 0 !important;
     }
-    
     .home {
         min-height: 50vh !important;
         padding: 3rem 0 !important;
@@ -132,36 +133,32 @@
     .section-title {
         font-size: 2.5rem !important;
     }
-    
     .mypic {
         width: 250px !important;
         margin: 0 auto 2rem auto !important;
     }
-    
     .project-grid,
     .skills-grid {
         margin-left: 1.5rem !important;
         margin-right: 1.5rem !important;
         gap: 2rem !important;
     }
-    
     .project-card,
     .skill-card {
         padding: 2rem !important;
     }
 }
 
+
 @media screen and (max-width: 480px) {
     section {
         height: auto !important;
         padding: 3rem 0 !important;
     }
-    
     .home {
         min-height: 40vh !important;
         padding: 2rem 0 !important;
     }
-    
     main {
         margin-top: 5rem !important;
     }
@@ -169,40 +166,41 @@
         font-size: 1.2rem !important;
         padding-left: 0.5rem !important;
     }
-    
     .home-content h1 {
         font-size: 36px !important;
         word-spacing: 0.5rem !important;
     }
-    
     .section-title {
         font-size: 2rem !important;
     }
-    
     .abt-tin {
         padding: 0 1rem !important;
     }
-    
     .project-grid,
     .skills-grid {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
     }
-    
     .project-card,
     .skill-card {
         padding: 1.5rem !important;
     }
-    
     .more-info {
         width: 95% !important;
         height: 85vh !important;
-        padding: 1rem !important;
+        padding: 1.5rem !important;
     }
-    
-    .close-btn {
+    .more-header {
+        padding: 0.5rem !important;
+    }
+    .more-header h3 {
+        font-size: 1rem !important;
+    }
+    .butn {
         top: 1rem !important;
         right: 1rem !important;
         font-size: 1.5rem !important;
+        color:goldenrod;
+        position: absolute;
     }
 }
