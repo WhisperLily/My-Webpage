@@ -1,363 +1,208 @@
+/* RESPONSIVE BREAKPOINTS */
 
-/* Tablets */
-@media screen and (max-width:912px) {
-
+@media screen and (max-width: 912px) {
     html {
         font-size: 14px; /* Adjust font size for tablets */
     }
-    .section { 
-        margin-left:1.875rem;
-        min-height: 100vh;
+    section {
+        height: auto !important;
+        min-height: 60vh !important;
+        padding: 6rem 0 !important;
     }
-
-
-    /* NAV BAR */
-    .texxt { /* hide horizontal menu bar for large screens */
-        display:none;
-    }
-    .menu-button { /* show menu button which is hidden on large screens */
-        display:block;
-    }
-    .sidebar { /* the width for the sidebar */
-        width:60%;
-        margin-right:1rem;
-    }
-
-    ul { /* hide the border bottom on small screens */
-        border-bottom:none;
-    }
-    .ad {
-        margin-left:6.25rem;
-        padding-bottom:1.875rem;
-    }
-    .butn{
-        width:2.8125rem;
-        height:2.8125rem;
-    }
-    .name-logo {
-        font-size:1.5625rem;
-    }
-
-
-    /* LANDING PAGE */ 
-    #home {
-        flex-direction:row;
-    }
-    .home {
-        margin-right:3.4375rem;
-    }
-    .welcome{
-        font-size:0.625rem;;
-    }
-    .name {
-        font-size:2.1875rem;
-    }
-    .memoji img{
-        padding-top:5.625rem;
-        width:12.5rem;
-        height:auto;
-        margin-top:0;
-    }
-
-
-    /* About section */
-    .mypic {
-        width:8.75rem;
-        margin:auto; /* Center align */
-    }
-    .desMe{
-        font-size:1.4375rem;
-    }
-    .interests {
-        margin-left:1.875rem;
-    }
-
-
-    /* SKILLS SECTION */
-    .skls {
-            text-align:center;
-            margin-top:2.1875rem;
-            margin-bottom:0.9375rem;
-            font-size:1.875rem;
-    }
-        
     
-    /* PROJECTS SECTION */
-    .container{
-        display:flex;
-        align-items:flex-start;
+    .home {
+        min-height: 70vh !important;
+        height: auto !important;
     }
-
-    /* CERTIFICATES SECTION */
-    .contain{
-        display:flex;
-        align-items:flex-start;
+    .nav-menu {
+        display: none;
     }
-    .award{
-        font-size:0.8125rem;
+    
+    .menu-button {
+        display: block !important;
     }
-    .herts img, .ieuk img, .au img {
-        width:5.625rem;
+    
+    .sidebar {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: rgba(10, 10, 15, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        z-index: 2000;
+        list-style: none;
     }
-    .herts p, .ieuk p, .au p {
-        font-size:0.75rem;
+    
+    .sidebar.show {
+        right: 0;
     }
-    .herts, .ieuk, .au {
-        margin-bottom:1.5625rem;
+    
+    .sidebar li {
+        list-style: none;
+        margin: 1rem 0;
     }
-
-
-    /* CONTACTS SECTION */
-    #contact {
-        width:100%;
+    
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        display: block;
+        padding: 0.5rem;
+    }
+    
+    .abt-tin {
+        flex-direction: column;
+        padding: 0 2rem !important;
+        text-align: center;
+    }
+    
+    .project-grid,
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
     }
 }
 
-
-
-/* MOBILE PHONES */
-@media screen and (max-width:768px) {
-    .pgOptn {
-        width: 100%;
-        max-width: none;
-    }
-    html {
-        font-size:0.8125rem; /* Further reduce font size for phones */
-    }
-    .full-height { 
-        padding-top: 7.5rem;
-        margin-left:1.875rem;
-        min-height:100vh;
-        scroll-margin-top:7.5rem;
-        overflow-y: auto;
-    }
-
-
-    .abt, .work, .cert{
-        text-align:center;
-        font-size:1.25rem;
-        margin-bottom:2.1875rem;
-    } 
-
-
-    /* NAV BAR */
-    .texxt { /* hide horizontal menu bar for large screens */
-        display:none;
-    }
-    .menu-button { /* show menu button which is hidden on large screens */
-        display:block;
-    }
-    .menu-button svg {
-        width:2.1875rem;
-        height:2.1875rem;
-    }
-    .sidebar { /* the width for the sidebar */
-        width:60%;
-        margin-right:1rem;
-    }
-
-    ul { /* hide the border bottom on small screens */
-        border-bottom:none;
-    }
-    .ad {
-        margin-left:6.25rem;
-        padding-bottom:1.875rem;
-    }
-
-
-    /* LANDING PAGE */ 
-    .home {
-        margin-left:1.25rem;
-        margin-right:1.25rem;
-    }
-    .welcome{
-        font-size:0.625rem;
-    }
-    .name {
-        font-size:2.1875rem;
-    }
-    .memoji img{
-        width:11.25rem;
-        height:auto;
-        margin-top:-5.6rem;
-    }
-
-
-    /* About section */
-    .mypic {
-        display:block;
-        width:8.75rem;
-        margin:auto;
-        float:none;
-    }
-    .moi{
-        margin-top:2rem;
-    }
-    .desMe{
-        margin-left:1.875rem;
-        font-size:1.125rem;
-    }
-    .interests {
-        margin-left:1.875rem;
-    }
-    verse:active.tooltip {
-        visibility: visible;
-    }
-
-
-    /* SKILLS SECTION */
-    .skls {
-            text-align:center;
-            margin-top:2.1875rem;
-            margin-bottom:0.9375rem;
-            font-size:1.25rem;
-    }
-
-
-    /* PROJECTS SECTION */
-    #projects{
-        height:auto;
-    }
-    .container{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:flex-start;
-        gap:1.5rem;
-    }
-    .ws, .zodiac {
-        width:90%;
-        height:auto;
-        margin:none;
-
-    }
-    .proj1, .proj2 {
-        height:auto;
-        width: 100%;
-    }
-    .title{
-        width: 100%;
+@media screen and (max-width: 768px) {
+    section {
+        height: auto !important;
+        min-height: 50vh !important;
+        padding: 5rem 0 !important;
     }
     
-        
-    /* CERTIFICATES SECTION */
-    .contain{
-        display:flex;
-        flex-direction:row;
+    .home {
+        min-height: 60vh !important;
+        padding: 4rem 0 !important;
     }
-    .award{
-        font-size:0.8125rem;
+    
+    main {
+        margin-top: 6rem !important;
     }
-    .herts img, .ieuk img, .au img {
-        width:5.625rem;
+    .home-content h1 {
+        font-size: 64px !important;
+        letter-spacing: -3px !important;
     }
-    .herts p, .ieuk p, .au p {
-        font-size:0.75rem;
-        border-bottom:double #a17454 0.3rem;
+    
+    .home .subtitle {
+        font-size: 18px !important;
     }
-    .herts, .ieuk, .au {
-        width: 100%;
-        margin-bottom:3rem;
+    
+    .project-grid,
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
     }
-
-
-    /* CONTACTS SECTION */
-    #contact {
-        width:100%;
-        max-width: 33.75rem;
+    
+    .contact-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .more-info {
+        width: 90% !important;
+        height: 80vh !important;
+        padding: 2rem !important;
     }
 }
-
-
 
 @media screen and (max-width: 624px) {
-    html {
-        font-size: 0.75rem; /* Smallest font size for small devices */
+    section {
+        height: auto !important;
+        min-height: auto !important;
+        padding: 4rem 0 !important;
     }
-    .full-height { 
-        padding-top: 7.5rem;
-        margin-left:1.875rem;
-        min-height:100vh;
-        scroll-margin-top:7.5rem;
-        overflow-y: auto;
-    }
-    #home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    height: 100vh;
-}
-
+    
     .home {
-        flex: 1;
-        flex-wrap:wrap;
-        max-width: 50%;
+        min-height: 50vh !important;
+        padding: 3rem 0 !important;
     }
-
-    .memoji {
-        max-width: 50%;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        margin-top:-15rem;
+    .home-content h1 {
+        font-size: 48px !important;
+        letter-spacing: -2px !important;
     }
-
-    .memoji img{
-        width:11.25rem;
-        flex: 0 0 auto;
+    
+    .section-title {
+        font-size: 2.5rem !important;
     }
-
-    .clusters img {
-        width: 3.125rem;
+    
+    .mypic {
+        width: 250px !important;
+        margin: 0 auto 2rem auto !important;
     }
-
-    .hold {
-        display:grid;
-        grid-template-columns:50% 50%;
+    
+    .project-grid,
+    .skills-grid {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        gap: 2rem !important;
     }
-
-    .menu-button svg {
-        width: 1.875rem;
-        height: 1.875rem;
+    
+    .project-card,
+    .skill-card {
+        padding: 2rem !important;
     }
-    .contain{
-        display:flex;
-        flex-wrap:wrap;
-    }
-    .herts, .ieuk, .au {
-        width:12.25rem;
-        height:auto;
-        text-align:center;
-        padding:0.8125rem;
-    }
-   
-
 }
+
 @media screen and (max-width: 480px) {
-    .memoji {
-        flex: 1;
-        display: flex;
-        justify-content:center;
-        margin-top:-13rem;
+    section {
+        height: auto !important;
+        padding: 3rem 0 !important;
     }
-    .memoji img{
-        width:7rem;
-        flex: 0 0 auto;
+    
+    .home {
+        min-height: 40vh !important;
+        padding: 2rem 0 !important;
     }
-
-
-    @media screen and (max-width: 405px) {
-    .memoji {
-        flex: 1;
-        display: flex;
-        justify-content:center;
-        margin-top:-13rem;
+    
+    main {
+        margin-top: 5rem !important;
     }
-    .memoji img{
-        width:5rem;
-        flex: 0 0 auto;
+    .name-logo {
+        font-size: 1.2rem !important;
+        padding-left: 0.5rem !important;
     }
-
+    
+    .home-content h1 {
+        font-size: 36px !important;
+        word-spacing: 0.5rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+    
+    .abt-tin {
+        padding: 0 1rem !important;
+    }
+    
+    .project-grid,
+    .skills-grid {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    
+    .project-card,
+    .skill-card {
+        padding: 1.5rem !important;
+    }
+    
+    .more-info {
+        width: 95% !important;
+        height: 85vh !important;
+        padding: 1rem !important;
+    }
+    
+    .close-btn {
+        top: 1rem !important;
+        right: 1rem !important;
+        font-size: 1.5rem !important;
+    }
 }
