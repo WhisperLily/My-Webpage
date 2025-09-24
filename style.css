@@ -402,7 +402,7 @@ section {
     gap:1.5rem;
     flex-wrap:wrap;
 }
- .btn {
+.btn {
     padding: 1rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 8px;
@@ -435,6 +435,12 @@ section {
 .download-btn{
     background-color:darkgoldenrod;
 }
+.download-btn::before {
+    content: '↓';
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
 
 
 /* Footer */
