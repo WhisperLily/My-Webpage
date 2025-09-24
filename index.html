@@ -14,182 +14,318 @@
 </head>
 
 <body>
-<!-- NAVIGATION BAR -->
-    <div class="pgOptn"> 
-        <ul class="sidebar" > <!-- the side bar for small screens -->
-            <li onclick=hideSidebar() class="butn"><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
-            <li><a href="#home" class="ad" onclick=hideSidebar()> HOME </a></li>
-            <li><a href="#about" class="ad" onclick=hideSidebar()> ABOUT ME </a></li>
-            <li><a href="#skills" class="ad" onclick=hideSidebar()> MY SKILLS </a></li>
-            <li><a href="#projects" class="ad" onclick=hideSidebar()> PROJECTS </a></li>
-            <li><a href="#certificates" class="ad" onclick=hideSidebar()> CREDENTIALS </a></li> 
-            <li><a href="#contact" class="ad" onclick=hideSidebar()> CONTACT </a></li>
-        </ul> 
-        <ul>
-            <li><a href="#home" class="texxt"> HOME </a></li>
-            <li><a href="#about" class="texxt"> ABOUT ME </a></li>
-            <li><a href="#skills" class="texxt"> MY SKILLS </a></li>
-            <li><a href="#projects" class="texxt"> PROJECTS </a></li>
-            <li><a href="#certificates" class="texxt"> CREDENTIALS </a></li> 
-            <li><a href="#contact" class="texxt"> CONTACT </a></li>
-            <li class="menu-button" onclick=showSidebar() class="butn"><a href="#">  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
-           
-        </ul> 
-    </div>
-<!-- Bible verse separated into a div to meet design expectation. 
- Will like to add a feature were verse changes to any of my favorite verses everytime webpage is reloaded -->
-    <div class="verse"><strong> Philippians 4:13 </strong> 
-        <span class="tooltip">I CAN DO ALL THINGS THROUGH CHRIST WHO STRENGTHENS ME</span>
-    </div> 
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav>
+        <div class="navigation">
+            <div class="name-logo"> SCHOLASTICA NWANZE </div>
+            
+            <button onclick=showSidebar() class="menu-button butn" style="display:none;">
+                <img src="./pics/bars.png" alt="menu" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            </button>
+            <!-- the side bar for small screens -->
+            <ul class="sidebar" style="display:none;"> 
+                <span onclick="hideSidebar()" class="butn"> X </span>      
+                <li><a href="#home" class="ad" onclick="hideSidebar()"> Home </a></li>
+                <li><a href="#about" class="ad" onclick="hideSidebar()"> About </a></li>
+                <li><a href="#skills" class="ad" onclick="hideSidebar()"> Skills </a></li>
+                <li><a href="#projects" class="ad" onclick="hideSidebar()"> Projects </a></li>
+                <li><a href="#contact" class="ad" onclick="hideSidebar()"> Contact </a></li>
+            </ul>
+        
 
-
-<!-- WEBPAGE SECTIONS -->
-    <!-- LANDING PAGE span is used for inline feature, to allow the image sit inline with the text. -->
-    <div id="home" class="full-height">
-        <span class="home">   
-            <p class="welcome"> WELCOME, MY NAME IS </p>
-            <p class="name">SCHOLASTICA <br> NWANZE </p>
-            <p class="career"> <em>Artificial Intelligence Engineer</em> <br>
-            <span class="hometext">I am an Artificial Intelligence graduate with a background in biomedical science.</span>
-            </p>
-        </span>
-        <span class="memoji">
-            <img src="./pics/Image.png">
-        </span>
-    </div>
-
-
-   <!-- PAGE DESCRIPTION OF ME--> 
-    <div id="about" class="full-height">
-        <div class="abt"> <h1><em> My Profile </em></h1> </div> 
-           <div> <img src="./pics/moi.png" class="mypic"> </div>
-            <div class="moi">
-            <p class="desMe">
-                I am an AI developer focused on building intelligent, autonomous systems. Currently pursuing an MSc in Applied Artificial Intelligence, 
-                I am developing a solid foundation in Python, machine learning, and deep learning, 
-                with a focus on building AI systems that go beyond simple automation. <br>
-                I have developed projects like a word unscramble game, demonstrating my skills in object-oriented design and program structure.
-                As I continue to build on my foundation, I aim to leverage cutting-edge technologies to solve pressing problems.
-                I am actively seeking opportunities to contribute to high-impact projects.
-            </p>
-        </div>
-        <div class="interests">
-            <p>
-                <strong class="inc">AREAS OF INTEREST:</strong> <br> Autonomous AI, Conversational AI, Multimodal integration, 
-                Applied machine learning and deep learning research <p>
-        </div>    
-    </div>
-
-
-    <!-- MY SKILLS PAGE -->
-    <div id="skills" class="full-height">
-        <div class="skls"> <h1><em> MY SKILLS </em></h1> </div>
-        <div class="hold">
-            <div class="clusters"> 
-                <img src="./pics/html.png" class="html">
-                <img src="./pics/css-3.png" class="css">
-                <img src="./pics/java-script.png" class="js">
-                <img src="./pics/python.png" class="py">
-                <img src="./pics/java.png" class="java">
-            </div>
-            <div class="sdesc">
-                <p class="ss">Soft Skills</p> 
-                <p class="list">Adaptability, Agility, Analytical thinking, Creative Problem-solving, Excellent Communication, 
-                Team Collaboration, Time management, Technical documentation </p>
-                <p class="ss"> Programming Languages</p> 
-                <p class="list">Python, SQL, R,  HTML, CSS, JavaScript </p>
-                <p class="ss">Tools</p> 
-                <p class="list">Microsoft packages, Google suite </p>
-                <p class="ss">Platforms</p>
-                <p class="list">Jupyter Notebook, Visual Studio Code, GitHub</p>
-            </div>
-        </div>
-    </div>
-
-
-     <!-- PROJECTS DISPLAY -->
-    <div id="projects" class="full-height">
-        <div class="work"> <h1><em> My Projects </em></h1> </div>
-        <div class="container">
-            <div class="zodiac">
-                <video autoplay muted controls class="proj1">
-                    <source src="./pics/zod.mov" type="video/mp4"> 
-                    Your browser does not support the video tag
-                </video>
-                <div class="title">
-                    <p class="proj_id"> Zodiac Sign Finder </p>
-                    <p class="txxxt">An interactive Python program that determines a user's zodiac sign based on their birth month selection. 
-                        It presents a menu, takes user input, and uses conditional logic to display the corresponding zodiac sign with a personality trait.
-                        The program also includes basic error handling for invalid inputs. As my first Python project, 
-                        it helped me develop foundational skills in user interaction, input handling, and control structures.
-                    </p>
-                   <a href="https://github.com/WhisperLily/Zodiac_Finder" target="_blank" class="move">
-                        <img src="./pics/github.png" class="icons">
-                    </a>
-
-                </div>
-            </div>    
-            <div class="ws">
-                <video autoplay muted controls class="proj2">
-                    <source src="./pics/Word_Shuffle.mp4" type="video/mp4"> 
-                    Your browser does not support the video tag
-                </video>
-                <div class="title">
-                    <p class="proj_id"> Word Shuffle </p>
-                    <p class="txxxt">A Python-based interactive word game that challenges players to unscramble randomly generated words. 
-                        Applied object-oriented programming (OOP) to design modular and reusable components for game logic, word management, 
-                        and user interaction. Integrated features such as scrambled word generation, player score tracking, 
-                        and replay functionality. Future updates may include difficulty scaling, and AI-driven hints.
-                    </p>
-                    <a href="https://github.com/WhisperLily/Word_Shuffle" target="_blank" class="move">
-                        <img src="./pics/github.png" class="icons">
-                    </a>
-                </div>
-            </div>    
+            <!-- Desktop menu -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="texxt"> Home </a></li>
+                <li><a href="#about" class="texxt"> About </a></li>
+                <li><a href="#projects" class="texxt"> Projects </a></li>
+                <li><a href="#skills" class="texxt"> Skills </a></li>
+                <li><a href="#contact" class="texxt"> Contact </a></li>
+            </ul>
         </div> 
-    </div>
+    </nav>
 
 
-     <!-- AWARDED CERTIFICATES -->
-    <div id="certificates" class="full-height"> 
-       <div class="cert"> <h1><em> My Credentials </em></h1> </div>
-       <div class="contain">
-            <div class="herts">
-                <img src="./pics/UH.PNG">
-                <p> UNIVERSITY OF HERTFORDSHIRE </p>
-                <div class="award"> BSc Biomedical Science - 2021 </div>
+    <!-- ===== HOME ===== -->
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1 class="job-text">GRADUATE AI DEVELOPER</h1>
+                <p class="subtitle">Autonomous AI • Reinforcement Learning • Computer Vision • NLP • AGI </p>
+                <p class="home-description">
+                    Developing next-generation artificial intelligence systems with a focus on 
+                    contextual awareness, reinforcement learning, adaptive learning and ethics frameworks.
+                </p>
+                </div>
+        </section>
+
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="about">
+           <div class="container">  
+                <h2 class="section-title"> About Me </h2>
+                <div class="abt-tin">
+                    <div class="mypic"> <img src="./pics/moi.png" class="mypic"> </div>
+                    <div class="about-sec">
+                        <h3 class="abt-heading">Passionate about the Future of AI</h3>
+                        <p class="about-text">
+                            I believe artificial intelligence should augment human capability rather than replace it. 
+                            I am focused on creating intelligent, autonomous systems that solve real-world problems while 
+                            maintaining high ethical standards. <br> As a recent MSc in Applied Artificial Intelligence graduate, 
+                            I am currently exploring computer vision, adaptive learning and semantic memory for next-generation AI applications.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+
+         <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title"> Featured Projects </h2>
+                <div class="project-grid">
+                    <div class="project-card"> <!-- WordMatrix -->
+                        <div class="project-header"> 
+                            <div class="project-number">01</div>
+                            <h3 class="project-title"> WordMatrix </h3>
+                            <div class="project-links">
+                                <a href="https://github.com/WhisperLily/Word_Shuffle" target="_blank" class="link">
+                                    Code
+                                </a>
+                                <a href=# target="_blank"  class="link">
+                                    Demo
+                                </a>
+                                <a onclick="showWM()"  class="link">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                            An interactive game that challenges players to unscramble randomly generated words. 
+                            Applying object-oriented programming (OOP) it incorporate a modular design and reusable components for game logic, word management, 
+                            and user interaction. <br>
+                            With features such as scrambled word generation, player score tracking, 
+                            and replay functionality. 
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Object-Oriented Programming (OOP)</span>
+                            <span class="tech-tag">Algorithm Design</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Session Management</span>
+                            <span class="tech-tag">Program Logic</span>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card"> <!-- SCAI -->
+                        <div class="project-header"> 
+                            <div class="project-number">02</div>
+                            <h3 class="project-title"> SCAI - Conversational AI</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/WhisperLily" target="_blank" class="link">
+                                    Code
+                                </a>
+                                <a href="https://scai-y8pb.onrender.com/" target="_blank" class="link">
+                                    Demo
+                                </a>
+                                <a onclick="showScai()" class="link">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                            This project is about the development of a conversational AI assistant with adaptive learning and multi-modal capabilities.
+                            This implements a web-based assistant capable of both voice and text interaction also incorporating
+                            emotion and facial recognition through vision to enhance contextual awareness.<br>It host a custom authentication system allowing for multi-users and
+                            persistent session management. 
+                            By combining speech, text and vision inputs, the assistant aims to provide more natural, personalised and human-like interactions.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Semantic Memory</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Autonomous learning</span>
+                            <span class="tech-tag">Multi-modal AI</span>
+                            <span class="tech-tag">Machine learning</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Stateless Authentication</span>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ieuk">
-                <img src="./pics/bn2.PNG">
-                <p> BRIGHT NETWORK </p>
-                <div class="award"> IEUK Technoogy Internship - 2023 </div>
+        </section>
+
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title"> Technical Expertise </h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3> Machine Learning </h3>
+                        <ul class="skill-list">
+                            <li>Computer Vision basics</li>
+                            <li>Natural Language Processing</li>
+                            <li>Supervised/Unsupervised Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3> Technologies</h3>
+                        <ul class="skill-list">
+                        <li>Python, R, JavaScript, SQL</li>
+                            <li>NumPy, FastAPI</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Git version control </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3> Data & Research </h3>
+                        <ul class="skill-list">
+                            <li>Academic Writing</li>
+                            <li>Research Methods</li>
+                            <li>Ethics in AI</li>
+                            <li>Data analysis</li>
+                            <li> Problem Solving </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="au">
-                <img src="./pics/AU.PNG">
-                <p> ASTON UNIVERSITY </p>
-                <div class="award"> MSc Applied Artificial Intelligence - 2025 </div>
+        </section>
+
+
+        <!-- ===== Contact ===== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title"> Let's Connect <h2>
+                <p>
+                    Open to opportunities in AI research, machine learning engineering, and innovative tech roles across Europe.
+                </p>
+                
+                <div class="contact-buttons">
+                    <a href="https://github.com/WhisperLily" alt="github link" target="_blank" class="btn github-btn"> Github </a>
+                    <a href="https://www.linkedin.com/in/scholan/" alt="linkedIn link" target="_blank" class="btn linkedin-btn"> LinkedIn </a>
+                    <a href="mailto:schola.knj@gmail.com" alt="Email link" target="_blank" class="btn email-btn"> Email </a>
+                    <a href="Resume.pdf" class="btn download-btn" download="Scholastica_Nwanze_Resume.pdf"> My Resume </a>
+                    </ul>
+                </div>
             </div>
+        </section>  
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2025 SCHOLASTICA </p>
+    </footer>
+
+
+
+    <!-- Floating DIVs for the more button in project grid -->
+
+    <div class="blur-overlay" id="blurOverlay" style="display: none;"></div>
+
+
+    <!-- SCAI More -->
+    <div id="scai-more" class="more show" style="display: none;">
+        <span class="close-btn" id="closeBtn" onclick="hideScai()"> X </span>
+        <div class="more-info">
+            <div class="more-header"> 
+                <h3> SCAI - Multi-modal Conversational AI </h3>
+            </div>
+            <p>
+                <span class="highlyt">SCAI</span>, a conversational AI designed by identifying the gap in current conversational assistants like Apple's Siri and Amazon's Alexa.
+                These assistants operate more like utility assistants with limitations such as; operating in single modality
+                no persistent memory for continuous conversation and they lack personal human interaction.<br>
+                With the introduction of SCAI, this bridges these gaps by setting core objectives such as; <br><br>
+                <strong class="strong">Multi-modal capabilities:</strong> This combines text, voice, vision as integral components for personal interaction. 
+                The integration of computer vision, specifically emotion recognition and facial recognition aids in providing SCAI with context awareness, making SCAI's responses more personal, more human-like.
+                Essentially, the vision is in a sense comparative to some functions of the human eyes.<br><br>
+
+                <strong class="strong">Adaptive learning:</strong> SCAI is designed to remember users preferences or instructions and tailor its responses accordingly.
+                For example: In response to SCAI, I say I prefer short but informative answers.B efore adaptation, it may give long paragraphs but with its adaptive capabilities
+                it would give a more concise summary. It changes its behaviour based on my preference. The users preferences are also used to develop the SCAI capabilities.<br><br>
+
+                <strong class="strong">Autonomous learning:</strong> SCAI is designed to use its understanding of the user and their preferences to tailor its responses and actions. 
+                For instance, I say I like listening to classical music when I am in a bad mood and next time SCAI notices I'm in a bad mood (using its vision component), it recommends
+                I listen to classical music to make me feel better.
+                It uses its knowledge of me to tailor its actions/suggestions.<br><br>
+
+                <em> SCAI stands out as it is designed to be able to initiate conversations with the user. </em>
+            </p>
+            <br><br>
+            
+            <h3 class="ex"> Future Work </h3>
+            <p>
+                There is more work to be done in developing SCAI. Some features i would like to implement includes;<br>
+                <ul class="future-list">
+                    <li>Graceful fallback, this ensures that when a modality isn't functioning, users are redirected and recommended to use a different one</li>
+                    <li>Search functionality, this feature allows users to search conversation history for keywords/chats they would like to find and they are taking to the location of keyword</li>
+                    <li>Consistent comprehensive testing to ensure working functionality</li>
+                    <li>Live transcription for voice conversations which is displayed to users</li>
+                    <li>Interruption handling during speech for a more natural conversation flow</li>
+                    <li>Semantic memory</li>
+                    <li>Integration of IoT</li>
+                </ul>
+                
+                <p style="margin-top: 1rem;">There are more innovative ideas I would like to implement for this amazing project but the current priority is making SCAI fully functional and operational as it is currently facing some technical issues.</p> 
+            </p>
         </div>
     </div>
 
 
-    <!-- CONTACT ME! -->
-    <footer id="contact">
-            <div class="gl">
-                <a href="mailto:schola.knj@gmail.com" alt="gmail icon" target="_blank">
-                     <img src="./pics/gmail.png" class="logo"> 
-                </a>
+    <!-- WordMatrix More -->
+    <div id="wm-more" class="more show" style="display: none;">
+        <span class="close-btn" id="closeBtn" onclick="hideWM()"> X </span>
+        <div class="more-info">
+            <div class="more-header"> 
+                <h3> WordMatrix</h3>
             </div>
-            <div class="ghl">
-              <a href="https://github.com/WhisperLily" alt="github link" target="_blank"> 
-                <img src="./pics/github.png" class="logo">     
-            </a>    
-            </div>
-            <div class="ll">
-                <a href="https://www.linkedin.com/in/scholan/" target="_blank"> 
-                    <img src="./pics/linkedin.png" alt="linkedin icon" class="logo">   
-                </a> 
-            </div>
-        </footer>    
+            <p>
+                WordMatrix is an engaging word puzzle game that challenges players to unscramble scrambled words within limited attempts.
+                Built with Python object-oriented programming, the game features:<br><br>
+                <strong class="strong">Intelligent Word Selection:</strong> Curated vocabulary ranging from common to advanced words<br>
+                <strong class="strong">Progressive Difficulty:</strong> Adaptive challenges that scale with player skill<br>
+                <strong class="strong">Strategic Gameplay:</strong> Three attempts per word with scoring system<br>
+                <strong class="strong">Session Management:</strong> Track used words to ensure variety across gameplay sessions<br><br>
+                The game demonstrates strong software architecture principles with modular class design separating display logic, word management, and game mechanics.
+            </p>
+            <br><br>
+            
+            <h3 class="ex"> Future Work </h3>
+            <p>
+                There is more work to be done in taking this game from simple to more innovative. Some features i would like to implement includes;<br>
+                <ul class="future-list">
+                    <li>Real-time competitive word challenges against other players</li>
+                    <li>AI-powered difficulty scaling based on player performance</li>
+                    <li>Categories like tech, science, literature with unlockable content</li>
+                    <li>Mobile Application: iOS/Android version with touch-optimised interface</li>
+                    <li>Global rankings and achievement badges</li>
+                    <li>Speed-based challenges with bonus scoring</li>
+                    <li>Definitions, usage examples, and vocabulary tracking</li>
+                    <li>Immersive audio feedback and visual effects</li>
+                    <li>Unique puzzles with special rewards</li>
+                    <li>Friend challenges and progress sharing</li>    
+                </ul>
+            </p>
+        </div>
+    </div>
 </body>
-</html>
+
+        
+        
+        
+        
+                    

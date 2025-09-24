@@ -5,15 +5,10 @@
     html {
         font-size: 14px; /* Adjust font size for tablets */
     }
-    .full-height { 
+    .section { 
         margin-left:1.875rem;
         min-height: 100vh;
     }
-    .abt, .work, .cert{
-        text-align:center;
-        font-size:1.875rem;
-        margin-bottom:2.1875rem;
-    } 
 
 
     /* NAV BAR */
@@ -35,11 +30,11 @@
         margin-left:6.25rem;
         padding-bottom:1.875rem;
     }
-    .butn svg {
+    .butn{
         width:2.8125rem;
         height:2.8125rem;
     }
-    .verse {
+    .name-logo {
         font-size:1.5625rem;
     }
 
