@@ -56,21 +56,33 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     word-spacing:0.5rem;
-    letter-spacing:2px;
+    letter-spacing:6px;
     margin:0.5rem;
     padding-left:1rem;
-    background: linear-gradient(180deg,#b77480, #feaaa0, #b77480, #f7e8c9, #b77480);
+    background: linear-gradient(45deg,#3b2222, #654328, #b59840, #ffeaaa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: drift 8s ease-in-out infinite;
+    animation: 
+        spinOnce 3s ease-in-out,
+        lightSweep 5s ease-in-out infinite 4s; /* Starts after spin */
 }
-@keyframes drift {
+@keyframes spinOnce {
     0% {
-        transform: translateX(-10px); /* Move left */
+        transform: rotateY(0deg);
     }
     100% {
-        transform: translateX(10px); /* Move right */
+        transform: rotateY(360deg);
+    }
+}
+@keyframes lightSweep {
+    0%, 100% {
+        background: linear-gradient(45deg,#3b2222, #654328, #b59840, #ffeaaa);
+        background-clip: text;
+    }
+    50% {
+        background: linear-gradient(45deg,#ffeaaa, #b59840, #654328, #3b2222);
+        background-clip: text;
     }
 }
 .nav-menu{
@@ -105,6 +117,12 @@ nav {
 }
 .nav-menu a.texxt.active {
     color: #daa520; /* Yellow when active */
+}
+.menu-button{
+    height:24px;
+    width:auto;
+    color:goldenrod;
+    
 }
 
 
