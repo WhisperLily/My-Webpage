@@ -110,5 +110,10 @@ function hideScai(){
     }, 500);
     
 }
+document.getElementById('closeBtn').addEventListener('click', hideScai);
+document.getElementById('closeBtn').addEventListener('touchend', function(e) {
+    e.preventDefault();  // Prevent double-firing
+    hideScai();
+});
 
 

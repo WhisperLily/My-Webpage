@@ -206,4 +206,9 @@
         color:goldenrod;
         position: absolute;
     }
+    .close-btn {
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.8rem;
+    }
 }
